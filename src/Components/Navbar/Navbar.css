@@ -1,0 +1,15 @@
+
+
+.iconImg{
+float: left;
+}
+
+.nav{
+display: flex;
+justify-content: center;
+
+
+}
+.font{
+    font-family: 'Young Serif', serif;
+}

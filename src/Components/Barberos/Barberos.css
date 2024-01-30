@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+.imgBarber{
+    width: 410px;
+    height: 600px;
+    object-fit: cover;
+}
+.textCardTittle{
+    font-family: 'Sedgwick Ave Display', cursive;
+   color: white;
+}
