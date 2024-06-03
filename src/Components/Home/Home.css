@@ -31,3 +31,9 @@ div{
     font-family: 'Young Serif', serif;
     color: white;
 }
+
+.card-icon{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

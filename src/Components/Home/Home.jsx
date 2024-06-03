@@ -44,7 +44,7 @@ function Home() {
                 alt="corte"
               />
             </CardBody>
-            <CardFooter>
+            <CardFooter className="card-icon">
               <Link href="https://calendly.com/nicollorente2002/corte-de-pelo">
                 <Button
                   size="lg"
@@ -74,7 +74,7 @@ function Home() {
               />
             </CardBody>
 
-            <CardFooter>
+            <CardFooter className="card-icon">
               <Link href="https://calendly.com/nicollorente2002/servicio-de-barba">
                 <Button
                   size="lg"
@@ -105,7 +105,7 @@ function Home() {
               />
             </CardBody>
 
-            <CardFooter className="turnosIcon">
+            <CardFooter className="turnosIcon card-icon">
               <Link href="https://calendly.com/nicollorente2002/color">
                 <Button
                   size="lg"
