@@ -1,4 +1,4 @@
-import { Card,Text,Image,CardFooter,Button, Divider } from "@chakra-ui/react";
+import { Card,Text,Image,CardFooter,Button } from "@chakra-ui/react";
 import Carousel from 'react-bootstrap/Carousel';
 import './Servicios.css'
 import IconIg from '../../assets/img/instagram.png'
@@ -8,7 +8,7 @@ import { Link } from '@chakra-ui/react'
 
 function servicios() {
   return (
-<>  
+<div className="content">  
 
 <br />
 <Text className="textTittle2" fontSize='27px' flex='center' >TE MOSTRAMOS UN POCO LOS SERVICIOS QUE OFRECEN NUESTROS MEJORES BARBEROS!</Text>
@@ -16,7 +16,7 @@ function servicios() {
 <br />
 
   <div className="service" > 
-  <div>
+  <div className="card">
     <Card maxW='lg' bg='black ' >
     <Text className="textTittle"> SERVICIOS DE NUESTRO BARBER ALEJO</Text>
     <Carousel fade >
@@ -54,13 +54,12 @@ function servicios() {
 
     </CardFooter>
   <Link href="https://www.instagram.com/ale_ezekiel/" > 
-    <Button  size='lg'  colorScheme='pink' bg='black'  > <Image src={IconIg} boxSize='30px'/> </Button>
+    <Button  className="button-ig" size='lg'  colorScheme='pink' bg='black'  > <Image src={IconIg} boxSize='30px'/> </Button>
     </Link>
   </Card>
   </div>
-<Divider/>
 
-<div>
+<div  className="card">
   <Card maxW='lg' bg='black ' >
     <Text className="textTittle" > SERVICIOS DE NUESTRO BARBER NAHUEL </Text>
     <Carousel fade >
@@ -94,13 +93,13 @@ function servicios() {
 
     </CardFooter>
     <Link href="https://www.instagram.com/nahu.barberia/">
-    <Button    size='lg' colorScheme='pink' bg='black' > <Image src={IconIg} boxSize='30px'/> </Button>
+    <Button className="button-ig"    size='lg' colorScheme='pink' bg='black' > <Image src={IconIg} boxSize='30px'/> </Button>
     </Link>
   </Card>
   </div>
 
-  <Divider/>
-<div>
+
+<div  className="card">
   <Card maxW='lg' bg='black ' >
     <Text className="textTittle" colorScheme="white"> SERVICIOS DE NUESTRO BARBER MATIAS </Text>
     <Carousel fade >
@@ -134,7 +133,7 @@ function servicios() {
 
     </CardFooter>
   <Link href= "https://www.instagram.com/matyy_barber/">
-    <Button   size='lg' colorScheme='pink' bg='black'  ><Image src={IconIg}  boxSize='30px'/> </Button>
+    <Button className="button-ig"   size='lg' colorScheme='pink' bg='black'  ><Image src={IconIg}  boxSize='30px'/> </Button>
     </Link>
   </Card>
   </div>
@@ -145,7 +144,7 @@ function servicios() {
 
  
 
-  </>
+  </div>
   );
 }
 
